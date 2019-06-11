@@ -1,11 +1,27 @@
+
 # lab-06-back-end
 
-Number and name of feature: Feature 2 Location
+Author : Evan Curry and Paula Cruz
 
-Estimate of time needed to complete: 1.5 hr
+Version: 
 
-Start time: 11:00am
+Getting Started: 
 
-Finish time: _____
+Architecture: 
+
+Change Log:
+
+Credit and Collaboration:
+
+Number and name of feature: Noide, NPM and express
+
+Estimate of time needed to complete: 
+
+Start time: 10:15am
+
+Finish time: 
 
 Actual time needed to complete: _____
+
+
+
