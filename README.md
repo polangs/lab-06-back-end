@@ -3,7 +3,7 @@
 
 Author : Evan Curry and Paula Cruz
 
-Version: 
+Version:
 
 Getting Started: 
 
