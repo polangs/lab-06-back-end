@@ -19,9 +19,9 @@ Estimate of time needed to complete:
 
 Start time: 10:15am
 
-Finish time: 
+Finish time: 12:45pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 3hrs.
 
 
 
