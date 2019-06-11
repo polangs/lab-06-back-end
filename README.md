@@ -32,11 +32,11 @@ Actual time needed to complete: _____
 =======
 # lab-06-back-end
 
-Number and name of feature: ________________________________
+Number and name of feature: Feature 2 Location
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1.5 hr
 
-Start time: _____
+Start time: 11:00am
 
 Finish time: _____
 
