@@ -1,0 +1,47 @@
+'use strict';
+
+// Load Environment Variables from the .env file
+require('dotenv').config();
+
+// Application Dependencies
+const express = require('express');
+const cors = require('cors');
+
+// Application Setup
+const PORT = process.env.PORT;
+const app = express();
+app.use(cors());
+// API Routes
+app.get('/location', (request,response) => {
+  console.log('REQUEST DATA', request.query.data);
+  
+  try {
+    const locationData = searchToLatLong(request.query.data);
+    const location = new Location(request.query.data, locationData.results[0]);
+    console.log('LOCATION', location);
+    response.send(locationData);
+  }
+  catch(error) {
+    console.error(error);
+    response.status(500).send('Status: 500. So sorry, something went wrong.');
+  }
+});
+
+// Helper Functions
+function searchToLatLong(query) {
+  const geoData = require('./data/geo.json');
+  console.log('GEO DATA', geoData);
+  return geoData;
+}
+
+// Refactor the searchToLatLong function to replace the object literal with a call to this constructor function:
+function Location(query, geoData) {
+  console.log('QUERY AND GEODATA', query, geoData);
+  this.search_query = query;
+  // this.formatted_query = geoData.result.formatted_address;
+  // this.latitude = geoData.results.geometry.location.lat;
+  // this.longitude = geoData.results.geometry.location.lng;
+}
+
+// Make sure the server is listening for requests
+app.listen(PORT, () => console.log(`App is listening on ${PORT}`) );
